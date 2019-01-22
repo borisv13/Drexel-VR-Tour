@@ -21,6 +21,14 @@ public class Forward : MonoBehaviour
 
     void Forward_5s()
     {
-        sound.time += 5;
+        if (sound.time < (sound.clip.length - 5))
+        {
+            sound.time += 5;
+        }
+        else
+        {
+            sound.time = sound.clip.length;
+        }
+
     }
 }
