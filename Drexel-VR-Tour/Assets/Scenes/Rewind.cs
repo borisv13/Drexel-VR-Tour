@@ -19,6 +19,14 @@ public class Rewind : MonoBehaviour
     }
     void rewind_5s()
     {
-        sound.time = sound.time - 5;
+        if (System.Math.Abs(sound.time) > 5)
+        {
+            sound.time = sound.time - 5;
+        }
+        else
+        {
+            sound.time = 0;
+        }
+
     }
 }
