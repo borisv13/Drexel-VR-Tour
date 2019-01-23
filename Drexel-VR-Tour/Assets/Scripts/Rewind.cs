@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Pause_Audio : MonoBehaviour
+public class Rewind : MonoBehaviour
 {
     // Start is called before the first frame update
     public AudioSource sound;
     void Start()
     {
-        GetComponent<Button>().onClick.AddListener(Pause_play);
+        GetComponent<Button>().onClick.AddListener(rewind_5s);
     }
 
     // Update is called once per frame
@@ -17,15 +17,16 @@ public class Pause_Audio : MonoBehaviour
     {
         
     }
-    public void Pause_play()
+    void rewind_5s()
     {
-        if (sound.isPlaying)
+        if (System.Math.Abs(sound.time) > 5)
         {
-            sound.Pause();
+            sound.time = sound.time - 5;
         }
         else
         {
-            sound.Play();
+            sound.time = 0;
         }
+
     }
 }
