@@ -9,11 +9,6 @@ namespace Interactive360
         [Tooltip("Only needed for Gaze Based Interactions")]
         public GameObject m_cameraUI;
 
-        private void Awake()
-        {
-            DontDestroyOnLoad(gameObject);
-        }
-
         private void Update()
         {
             checkForOtherCameras();
