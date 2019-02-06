@@ -5,12 +5,13 @@ using UnityEngine;
 public class TextBoxManager : MonoBehaviour
 {
     private GameObject m_obj;
+    private AudioSource m_targetSound;
 
     // Start is called before the first frame update
     void Start()
     {
-        m_obj = GameObject.Find("Text1");
-        m_obj.SetActive(false);
+        GameObject.Find("Textbox1").SetActive(false);
+        GameObject.Find("Textbox2").SetActive(false);;
     }
 
     // Update is called once per frame
@@ -19,15 +20,33 @@ public class TextBoxManager : MonoBehaviour
 
     }
 
-    public void OnClick()
+    public void OnClickInteractionSpotOne(GameObject targetTextBox)
     {
-        if (m_obj.activeInHierarchy)
+        if (targetTextBox.activeInHierarchy)
         {
-            m_obj.SetActive(false);
+            targetTextBox.SetActive(false);
+            GameObject.Find("MusicPlayer").GetComponent<Audio>().clickTextBox1CloseButton(0);
+            //GameObject.Find("MusicPlayer").GetComponent<Audio>().reloadInteractiveSound(GameObject.Find("Interactionspot2").GetComponent<AudioSource>());
         }
         else
         {
-            m_obj.SetActive(true);
+            targetTextBox.SetActive(true);
+            GameObject.Find("MusicPlayer").GetComponent<Audio>().clickTextBox1CloseButton(1);
+        }
+    }
+
+    public void OnClickInteractionSpotTwo(GameObject targetTextBox)
+    {
+        if (targetTextBox.activeInHierarchy)
+        {
+            targetTextBox.SetActive(false);
+            GameObject.Find("MusicPlayer").GetComponent<Audio>().clickTextBox2CloseButton(0);
+            //GameObject.Find("MusicPlayer").GetComponent<Audio>().reloadInteractiveSound(GameObject.Find("Interactionspot2").GetComponent<AudioSource>());
+        }
+        else
+        {
+            targetTextBox.SetActive(true);
+            GameObject.Find("MusicPlayer").GetComponent<Audio>().clickTextBox2CloseButton(1);
         }
     }
 }
