@@ -16,8 +16,7 @@ namespace Interactive360.Utils
         public Color color;
 
         public event Action<RaycastHit> OnRaycasthit;                   // This event is called every frame that the user's gaze is over a collider.
-
-        private Transform m_GameObject;
+        
         [SerializeField] private LayerMask m_ExclusionLayers;           // Layers to exclude from the raycast.
         [SerializeField] private bool m_ShowDebugRay;                   // Optionally show the debug ray.
         [SerializeField] private float m_DebugRayLength = 5f;           // Debug ray length.
@@ -26,7 +25,7 @@ namespace Interactive360.Utils
 
 
         public VRInteractiveItem m_CurrentInteractible;                //The current interactive item
-        private VRInteractiveItem m_LastInteractible;                   //The last interactive item
+        public VRInteractiveItem m_LastInteractible;                   //The last interactive item
 
 
         // Utility for other classes to get the current interactive item
@@ -37,7 +36,6 @@ namespace Interactive360.Utils
 
         private void Start()
         {
-            m_GameObject = transform;
 
             if (pose == null)
                 pose = this.GetComponent<SteamVR_Behaviour_Pose>();
@@ -54,6 +52,7 @@ namespace Interactive360.Utils
             pointer.transform.localScale = new Vector3(thickness, thickness, 100f);
             pointer.transform.localPosition = new Vector3(0f, 0f, 50f);
             pointer.transform.localRotation = Quaternion.identity;
+            
 
             Material newMaterial = new Material(Shader.Find("Unlit/Color"));
             newMaterial.SetColor("_Color", color);
@@ -71,11 +70,11 @@ namespace Interactive360.Utils
             // Show the debug ray if required
             if (m_ShowDebugRay)
             {
-                Debug.DrawRay(m_GameObject.position, m_GameObject.forward * m_DebugRayLength, Color.blue, m_DebugRayDuration);
+                Debug.DrawRay(this.transform.position, this.transform.forward * m_DebugRayLength, Color.blue, m_DebugRayDuration);
             }
 
             // Create a ray that points forwards from the camera.
-            Ray ray = new Ray(m_GameObject.position, m_GameObject.forward);
+            Ray ray = new Ray(this.transform.position, this.transform.forward);
 
             // Do the raycast forweards to see if we hit an interactive item
             if (Physics.Raycast(ray, out RaycastHit hit, m_RayLength, ~m_ExclusionLayers))
@@ -85,11 +84,19 @@ namespace Interactive360.Utils
 
                 // If we hit an interactive item and it's not the same as the last interactive item, then call Over
                 if (interactible && interactible != m_LastInteractible)
+                {
                     interactible.Over();
+                    print(this.transform.name + "hitting");
+                }
+                
 
                 // Deactive the last interactive item 
                 if (interactible != m_LastInteractible)
+                {
                     DeactiveLastInteractible();
+                    print(this.transform.name + "hitting");
+                }
+                
 
                 m_LastInteractible = interactible;
 
@@ -99,6 +106,7 @@ namespace Interactive360.Utils
             }
             else
             {
+                print(this.transform.name + "not hitting");
                 // Nothing was hit, deactive the last interactive item.
                 DeactiveLastInteractible();
                 m_CurrentInteractible = null;
