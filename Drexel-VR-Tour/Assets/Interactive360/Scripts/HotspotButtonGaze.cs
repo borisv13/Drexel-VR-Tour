@@ -98,6 +98,11 @@ namespace Interactive360
                 // The image's fill amount requires a value from 0 to 1 so we normalise the time.
                 m_SelectionImage.fillAmount = timer / m_WaitTime;
 
+                if (Input.GetMouseButtonDown(0))
+                {
+                    break;
+                }
+
                 // Increase the timer by the time between frames and wait for the next frame.
                 timer += Time.deltaTime;
                 yield return null;
