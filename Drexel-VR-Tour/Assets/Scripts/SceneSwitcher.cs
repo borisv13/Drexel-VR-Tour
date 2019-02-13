@@ -20,4 +20,13 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("DiningRoom");
     }
+    public void ChangeToMainBuilding()
+    {
+        SceneManager.LoadScene("MainBuilding");
+    }
+
+    public void ChangeToMandellTheatre()
+    {
+        SceneManager.LoadScene("MandellTheatre");
+    }
 }
