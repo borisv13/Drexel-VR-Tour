@@ -4,29 +4,17 @@ using UnityEngine;
 
 public class Audio : MonoBehaviour
 {
-    public AudioSource InteractiveSound1;
-    public AudioSource InteractiveSound2;
-    public AudioSource mainInteractiveSound;
     public int mainInteractiveItemIndex;
+
+    public AudioSource[] m_audio;
+    public GameObject[] m_play;
+    public GameObject[] m_pause;
 
     private AudioSource currentSound = null;
 
-    private AudioSource[] m_audio = new AudioSource[3];
-    private GameObject[] m_play = new GameObject[3];
-    private GameObject[] m_pause = new GameObject[3];
-
     void Start()
     {
-        m_audio[0] = InteractiveSound1;
-        m_audio[1] = InteractiveSound2;
-        m_audio[2] = mainInteractiveSound;
-        m_play[0] = GameObject.Find("Textbox2_play_button");
-        m_pause[0] = GameObject.Find("Textbox2_pause_button");
-        m_play[1] = GameObject.Find("Textbox1_play_button");
-        m_pause[1] = GameObject.Find("Textbox1_pause_button");
-        m_play[2] = GameObject.Find("Textbox3_play_button");
-        m_pause[2] = GameObject.Find("Textbox3_pause_button");
-        currentSound = mainInteractiveSound;
+        currentSound = m_audio[mainInteractiveItemIndex];
         m_play[mainInteractiveItemIndex].SetActive(false);
         m_pause[mainInteractiveItemIndex].SetActive(true);
     }
