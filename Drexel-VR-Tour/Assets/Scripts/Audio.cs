@@ -12,7 +12,6 @@ public class Audio : MonoBehaviour
 
     private AudioSource currentSound = null;
 
-
     //make sure main audio is the last audio
     void Start()
     {
