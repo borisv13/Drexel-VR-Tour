@@ -31,12 +31,30 @@ namespace Interactive360
         private bool m_RadialFilled;                    // Used to allow the coroutine to wait for the bar to fill.
         private bool m_IsSelectionRadialActive;         // Whether or not the bar is currently useable.
 
+        private int platform; //for now, 0 - VR headset 1 - web
+
 
 
         private void Awake()
         {
             m_Button = GetComponent<Button>(); //Reference to Button component 
             m_InteractiveItem = GetComponent<VRInteractiveItem>(); //Reference to VRInteractiveItem Component 
+
+            LoadConfig test = new LoadConfig();
+            string content = test.readFileFromStreamingAssets();
+            Debug.Log(content);
+            if (content == "VR")
+            {
+                platform = 0;
+            }
+            else if (content == "Web")
+            {
+                platform = 1;
+            }
+            else
+            {
+                platform = -1;
+            }
         }
 
         private void Start()
@@ -98,11 +116,6 @@ namespace Interactive360
                 // The image's fill amount requires a value from 0 to 1 so we normalise the time.
                 m_SelectionImage.fillAmount = timer / m_WaitTime;
 
-                if (Input.GetMouseButtonDown(0))
-                {
-                    break;
-                }
-
                 // Increase the timer by the time between frames and wait for the next frame.
                 timer += Time.deltaTime;
                 yield return null;
@@ -116,6 +129,50 @@ namespace Interactive360
 
             // The radial is now filled so the coroutine waiting for it can continue.
             m_RadialFilled = true;
+
+            // call OnClick now that the selection is complete
+            m_Button.onClick.Invoke();
+
+
+            // Once it's been used make the radial invisible.
+            Hide();
+
+        }
+
+        private IEnumerator webSelectionClick()
+        {
+
+            // This loop is executed once per frame until the timer exceeds the duration.
+            while (true)
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    break;
+                }
+                yield return null;
+            }
+
+            // call OnClick now that the selection is complete
+            m_Button.onClick.Invoke();
+
+
+            // Once it's been used make the radial invisible.
+            Hide();
+
+        }
+
+        private IEnumerator webClickSelection()
+        {
+            while (true)
+            {
+                // The image's fill amount requires a value from 0 to 1 so we normalise the time.
+                if (Input.GetMouseButtonDown(0))
+                {
+                    break;
+                }
+
+                yield return null;
+            }
 
             // call OnClick now that the selection is complete
             m_Button.onClick.Invoke();
@@ -147,7 +204,19 @@ namespace Interactive360
             if (m_UsingFillImage)
             {
                 Debug.Log("start coroutine");
-                m_SelectionFillRoutine = StartCoroutine(FillSelectionRadial());
+                if (platform == 0)
+                {
+                    m_SelectionFillRoutine = StartCoroutine(FillSelectionRadial());
+                }
+                else if (platform == 1)
+                {
+                    m_SelectionFillRoutine = StartCoroutine(webSelectionClick());
+                }
+                else
+                {
+                    Debug.Log("unkonwn platform");
+                }
+                
             }
             else
                 StartCoroutine(WaitAndClick());
