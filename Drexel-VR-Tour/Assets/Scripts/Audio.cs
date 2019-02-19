@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Audio : MonoBehaviour
 {
-    public int mainInteractiveItemIndex;
+    //public int mainInteractiveItemIndex;
 
     public AudioSource[] m_audio;
     public GameObject[] m_play;
@@ -12,11 +12,14 @@ public class Audio : MonoBehaviour
 
     private AudioSource currentSound = null;
 
+
+    //make sure main audio is the last audio
     void Start()
     {
-        currentSound = m_audio[mainInteractiveItemIndex];
-        m_play[mainInteractiveItemIndex].SetActive(false);
-        m_pause[mainInteractiveItemIndex].SetActive(true);
+        int numberOfAudio = m_audio.Length;
+        currentSound = m_audio[numberOfAudio - 1];
+        m_play[numberOfAudio-1].SetActive(false);
+        m_pause[numberOfAudio-1].SetActive(true);
     }
 
     // Update is called once per frame
