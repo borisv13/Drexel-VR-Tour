@@ -141,7 +141,6 @@ namespace Interactive360
             //if this menu button gaze is for a hotspot, start the FillSelectionRadial coroutine. If it is not 
             if (m_UsingFillImage)
             {
-                Debug.Log("start coroutine");
                 m_SelectionFillRoutine = StartCoroutine(FillSelectionRadial());
             }
             else
@@ -151,7 +150,7 @@ namespace Interactive360
         private void HandleOut()
         {
             isOver = false;
-
+            
             // If the radial is active stop filling it and reset it's amount.
             if (m_IsSelectionRadialActive)
             {

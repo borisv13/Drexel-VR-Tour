@@ -75,38 +75,29 @@ namespace Interactive360.Utils
 
             // Create a ray that points forwards from the camera.
             Ray ray = new Ray(this.transform.position, this.transform.forward);
+            RaycastHit hit;
 
             // Do the raycast forweards to see if we hit an interactive item
-            if (Physics.Raycast(ray, out RaycastHit hit, m_RayLength, ~m_ExclusionLayers))
+            if (Physics.Raycast(ray, out hit, m_RayLength, ~m_ExclusionLayers))
             {
                 VRInteractiveItem interactible = hit.collider.GetComponent<VRInteractiveItem>(); //attempt to get the VRInteractiveItem on the hit object
                 m_CurrentInteractible = interactible;
 
-                // If we hit an interactive item and it's not the same as the last interactive item, then call Over
-                if (interactible && interactible != m_LastInteractible)
+                if (interactible)
                 {
-                    interactible.Over();
-                    print(this.transform.name + "hitting");
+                    if (interactible != m_LastInteractible) interactible.Over();
+
+                    m_LastInteractible = interactible;
+
+                    if (OnRaycasthit != null)
+                        OnRaycasthit(hit);
                 }
-                
-
-                // Deactive the last interactive item 
-                if (interactible != m_LastInteractible)
-                {
-                    DeactiveLastInteractible();
-                    print(this.transform.name + "hitting");
-                }
-                
-
-                m_LastInteractible = interactible;
+               
 
 
-                if (OnRaycasthit != null)
-                    OnRaycasthit(hit);
             }
             else
             {
-                print(this.transform.name + "not hitting");
                 // Nothing was hit, deactive the last interactive item.
                 DeactiveLastInteractible();
                 m_CurrentInteractible = null;
