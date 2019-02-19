@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 128789271}
   - component: {fileID: 128789270}
   m_Layer: 5
-  m_Name: Textbox1_rewind
+  m_Name: Textbox2_rewind
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -977,7 +977,7 @@ GameObject:
   - component: {fileID: 379655740}
   - component: {fileID: 379655739}
   m_Layer: 5
-  m_Name: Textbox1_forward
+  m_Name: Textbox2_forward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1269,7 +1269,7 @@ GameObject:
   - component: {fileID: 471506546}
   - component: {fileID: 471506545}
   m_Layer: 5
-  m_Name: Textbox2_close
+  m_Name: Textbox1_close
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1893,7 +1893,7 @@ GameObject:
   - component: {fileID: 688256208}
   - component: {fileID: 688256204}
   m_Layer: 0
-  m_Name: Text1
+  m_Name: Text2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2001,7 +2001,7 @@ GameObject:
   - component: {fileID: 730283601}
   - component: {fileID: 730283600}
   m_Layer: 5
-  m_Name: Textbox1_pause_button
+  m_Name: Textbox2_pause_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2484,10 +2484,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a98d9ab81f0c74ab35b17efc06295e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InteractiveSound1: {fileID: 769778984}
-  InteractiveSound2: {fileID: 232997188}
-  mainInteractiveSound: {fileID: 2116737047}
   mainInteractiveItemIndex: 2
+  m_audio:
+  - {fileID: 769778984}
+  - {fileID: 232997188}
+  - {fileID: 2116737047}
+  m_play:
+  - {fileID: 1256319574}
+  - {fileID: 1642736449}
+  - {fileID: 78162215}
+  m_pause:
+  - {fileID: 797204411}
+  - {fileID: 730283598}
+  - {fileID: 944362623}
 --- !u!224 &786230153
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2524,7 +2533,7 @@ GameObject:
   - component: {fileID: 797204414}
   - component: {fileID: 797204413}
   m_Layer: 5
-  m_Name: Textbox2_pause_button
+  m_Name: Textbox1_pause_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2814,7 +2823,7 @@ GameObject:
   - component: {fileID: 857367904}
   - component: {fileID: 857367903}
   m_Layer: 5
-  m_Name: Textbox1_close
+  m_Name: Textbox2_close
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3001,7 +3010,7 @@ GameObject:
   - component: {fileID: 921866741}
   - component: {fileID: 921866740}
   m_Layer: 5
-  m_Name: Textbox2_rewind
+  m_Name: Textbox1_rewind
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3185,7 +3194,7 @@ GameObject:
   - component: {fileID: 929269383}
   - component: {fileID: 929269382}
   m_Layer: 0
-  m_Name: Text2
+  m_Name: Text1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3686,7 +3695,7 @@ GameObject:
   - component: {fileID: 1256319577}
   - component: {fileID: 1256319576}
   m_Layer: 5
-  m_Name: Textbox2_play_button
+  m_Name: Textbox1_play_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3918,6 +3927,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce9bdca22d813eb44a7d25326ba95801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_textbox:
+  - {fileID: 330547822}
+  - {fileID: 1271064365}
 --- !u!4 &1310328983
 Transform:
   m_ObjectHideFlags: 0
@@ -3949,7 +3961,7 @@ GameObject:
   - component: {fileID: 1482935150}
   - component: {fileID: 1482935149}
   m_Layer: 5
-  m_Name: Textbox2_forward
+  m_Name: Textbox1_forward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4237,7 +4249,7 @@ GameObject:
   - component: {fileID: 1642736452}
   - component: {fileID: 1642736451}
   m_Layer: 5
-  m_Name: Textbox1_play_button
+  m_Name: Textbox2_play_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
