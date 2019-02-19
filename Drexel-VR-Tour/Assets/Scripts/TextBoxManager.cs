@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class TextBoxManager : MonoBehaviour
 {
-    private GameObject textbox1;
-    private GameObject textbox2;
-    private AudioSource m_targetSound;
     private GameObject currentTextbox;
-    private GameObject[] m_textbox = new GameObject[3];
+    public GameObject[] m_textbox;
 
     // Start is called before the first frame update
     void Start()
     {
-        m_textbox[0] = GameObject.Find("Textbox1");
-        m_textbox[1] = GameObject.Find("Textbox2");
-        m_textbox[0].SetActive(false);
-        m_textbox[1].SetActive(false);
+        int length = m_textbox.Length;
+        for (int i = 0; i < length; i++)
+        {
+            m_textbox[i].SetActive(false);
+        }
         currentTextbox = m_textbox[0];
     }
 
