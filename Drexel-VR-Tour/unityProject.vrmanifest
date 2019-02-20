@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.drexelvrtour.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\fred\\Desktop\\UnityProjectVR2019\\Drexel_VR_Tour\\Drexel-VR-Tour\\Drexel-VR-Tour\\actions.json",
+      "action_manifest_path": "C:\\Users\\fred\\Desktop\\UnityProjectVR2019\\Drexel_VR_Tour\\new\\Drexel-VR-Tour\\Drexel-VR-Tour\\actions.json",
       "strings": {
         "en_us": {
           "name": "Drexel-VR-Tour [Testing]"

@@ -17,4 +17,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MandellTheatre.unity
     guid: 1e3dee67fc2d34686a803665e59c5728
+  - enabled: 1
+    path: Assets/Scenes/URBN.unity
+    guid: 35fe99bf385e14b4e9abddeba0799370
+  - enabled: 1
+    path: Assets/Scenes/Buckley.unity
+    guid: dcc56e7f530314bf0a6272e3dce2725c
+  - enabled: 1
+    path: Assets/Scenes/UrbanEatery.unity
+    guid: f003ae67ae0c74f1e918ea349fc882d6
+  - enabled: 1
+    path: Assets/Scenes/DAC.unity
+    guid: 8265bb7503ac4414f9837bb7aa777ebb
+  - enabled: 1
+    path: Assets/Scenes/Dormitory.unity
+    guid: 10c86922273c541ec92101b31768ce75
+  - enabled: 1
+    path: Assets/Scenes/Dragon.unity
+    guid: 4e04c65e374c8465a93391662dacee1c
+  - enabled: 1
+    path: Assets/Scenes/PISB.unity
+    guid: 74e9bc233505c46a4b700b5fc8d81d51
+  - enabled: 1
+    path: Assets/Scenes/Steinbright.unity
+    guid: 51ca3ceb360304c1282d58a42b15ee1d
   m_configObjects: {}
