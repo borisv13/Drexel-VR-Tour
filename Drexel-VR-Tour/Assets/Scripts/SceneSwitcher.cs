@@ -29,4 +29,44 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("MandellTheatre");
     }
+
+    public void ChangeToPISB()
+    {
+        SceneManager.LoadScene("PISB");
+    }
+
+    public void ChangeToTheDragon()
+    {
+        SceneManager.LoadScene("Dragon");
+    }
+
+    public void ChangeToDAC()
+    {
+        SceneManager.LoadScene("DAC");
+    }
+
+    public void ChangeToBuckley()
+    {
+        SceneManager.LoadScene("Buckley");
+    }
+
+    public void ChangeToSteinbright()
+    {
+        SceneManager.LoadScene("Steinbright");
+    }
+
+    public void ChangeToDorms()
+    {
+        SceneManager.LoadScene("Dormitory");
+    }
+
+    public void ChangeToUrbanEatery()
+    {
+        SceneManager.LoadScene("UrbanEatery");
+    }
+
+    public void ChangeToURBN()
+    {
+        SceneManager.LoadScene("URBN");
+    }
 }
