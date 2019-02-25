@@ -16,8 +16,7 @@ using UnityEngine;
         //make sure main audio is the last audio
         void Start()
         {
-            autoPlayAudio = PlayerPrefs.GetInt("autoPlayAudio");
-            Debug.Log(autoPlayAudio);
+            autoPlayAudio = PlayerPrefs.GetInt("autoPlayAudio");;
             int numberOfAudio = m_audio.Length;
             currentSound = m_audio[numberOfAudio - 1];
             if (autoPlayAudio == 1)
