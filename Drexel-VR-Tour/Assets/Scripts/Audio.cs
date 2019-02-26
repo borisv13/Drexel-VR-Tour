@@ -1,22 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-    public class Audio : MonoBehaviour
+public class Audio : MonoBehaviour
     {
         //public int mainInteractiveItemIndex;
 
         public AudioSource[] m_audio;
         public GameObject[] m_play;
         public GameObject[] m_pause;
+        public UnityEvent switchToScene;
 
         private AudioSource currentSound = null;
         private int autoPlayAudio = 1;
+        private int autoWalk = 0;
 
         //make sure main audio is the last audio
         void Start()
         {
-            autoPlayAudio = PlayerPrefs.GetInt("autoPlayAudio");;
+            autoPlayAudio = PlayerPrefs.GetInt("autoPlayAudio");
+            autoWalk = PlayerPrefs.GetInt("autoWalk");
             int numberOfAudio = m_audio.Length;
             currentSound = m_audio[numberOfAudio - 1];
             if (autoPlayAudio == 1)
@@ -52,8 +56,12 @@ using UnityEngine;
                             m_pause[i].SetActive(false);
                         }
                     }
+                if ( autoWalk == 1 && currentSound == m_audio[length - 1])
+                {
+                    switchToScene.Invoke();
                 }
             }
+        }
         }
 
 
