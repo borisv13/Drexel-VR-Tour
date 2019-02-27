@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Tour Intro.unity
+    path: Assets/Scenes/0_Tour Intro.unity
     guid: 246b966de20af7541b5314ff929e8a24
   - enabled: 1
-    path: Assets/Scenes/MainBuilding.unity
+    path: Assets/Scenes/1_MainBuilding.unity
     guid: dd2ac2adf5d9c41cebd6eed9992c139c
   - enabled: 1
     path: Assets/Scenes/2_Inside_MainBuilding.unity
@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/3_MainBuilding.unity
     guid: fa2b3ac3ab457df43bc82b86e31e73db
   - enabled: 1
-    path: Assets/Scenes/MandellTheatre.unity
+    path: Assets/Scenes/4_MandellTheatre.unity
     guid: 1e3dee67fc2d34686a803665e59c5728
   - enabled: 1
     path: Assets/Scenes/5_Inside_MandellTheatre.unity
@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/6_MandellTheatre.unity
     guid: 7c692c0653ec38542b6f0c4e719937d8
   - enabled: 1
-    path: Assets/Scenes/PISB.unity
+    path: Assets/Scenes/7_PISB.unity
     guid: 74e9bc233505c46a4b700b5fc8d81d51
   - enabled: 1
     path: Assets/Scenes/8_Inside_PISB.unity
@@ -45,10 +45,10 @@ EditorBuildSettings:
     path: Assets/Scenes/10_33rd_Chestnut.unity
     guid: 896398d0c08107a4bbb187d3a184ba60
   - enabled: 1
-    path: Assets/Scenes/Dragon.unity
+    path: Assets/Scenes/11_Dragon.unity
     guid: 4e04c65e374c8465a93391662dacee1c
   - enabled: 1
-    path: Assets/Scenes/DAC.unity
+    path: Assets/Scenes/12_DAC.unity
     guid: 8265bb7503ac4414f9837bb7aa777ebb
   - enabled: 1
     path: Assets/Scenes/13_Inside_DAC.unity
