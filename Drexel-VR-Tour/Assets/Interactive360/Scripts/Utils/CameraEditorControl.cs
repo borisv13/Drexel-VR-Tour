@@ -51,10 +51,10 @@ namespace Interactive360.Utils
                 vrCamera.Rotate(-vertical, 0f, 0f, Space.Self);
 
                 //Get the player's body movement from the keyboard
-                float moveLR = Input.GetAxis("Horizontal") * movementSpeed * Time.deltaTime;
-                float moveFB = Input.GetAxis("Vertical") * movementSpeed * Time.deltaTime;
+                //float moveLR = Input.GetAxis("Horizontal") * movementSpeed * Time.deltaTime;
+                //float moveFB = Input.GetAxis("Vertical") * movementSpeed * Time.deltaTime;
                 //Apply the movement
-                transform.Translate(moveLR, 0f, moveFB);
+                //transform.Translate(moveLR, 0f, moveFB);
 
                 //If the user presses "escape", unlock the cursor
                 if (Input.GetButtonDown("Cancel"))

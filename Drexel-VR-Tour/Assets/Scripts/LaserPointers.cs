@@ -40,7 +40,10 @@ namespace Interactive360.Utils
             if (pose == null)
                 pose = this.GetComponent<SteamVR_Behaviour_Pose>();
             if (pose == null)
+            {
                 Debug.LogError("No SteamVR_Behaviour_Pose component found on this object");
+                return;
+            }
 
             holder = new GameObject();
             holder.transform.parent = this.transform;
@@ -61,6 +64,7 @@ namespace Interactive360.Utils
 
         private void Update()
         {
+            if (pose == null) return;
             EyeRaycast();
         }
 
