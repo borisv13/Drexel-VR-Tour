@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class SceneSwitcher : MonoBehaviour
 {
     // Start is called before the first frame update
+
     void Start()
     {
-        
     }
 
     public void ChangeToKitchenScene()
@@ -45,28 +45,8 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadScene("DAC");
     }
 
-    public void ChangeToBuckley()
+    public void ChangeScene(string scene)
     {
-        SceneManager.LoadScene("Buckley");
-    }
-
-    public void ChangeToSteinbright()
-    {
-        SceneManager.LoadScene("Steinbright");
-    }
-
-    public void ChangeToDorms()
-    {
-        SceneManager.LoadScene("Dormitory");
-    }
-
-    public void ChangeToUrbanEatery()
-    {
-        SceneManager.LoadScene("UrbanEatery");
-    }
-
-    public void ChangeToURBN()
-    {
-        SceneManager.LoadScene("URBN");
+        SceneManager.LoadScene(scene);
     }
 }

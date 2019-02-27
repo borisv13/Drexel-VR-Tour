@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Kitchen.unity
-    guid: 570a55f7a860842288e7f5b7e4d77b0d
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MainBuilding.unity
     guid: dd2ac2adf5d9c41cebd6eed9992c139c
@@ -18,27 +18,60 @@ EditorBuildSettings:
     path: Assets/Scenes/MandellTheatre.unity
     guid: 1e3dee67fc2d34686a803665e59c5728
   - enabled: 1
-    path: Assets/Scenes/29_URBN_outside.unity
-    guid: 35fe99bf385e14b4e9abddeba0799370
-  - enabled: 1
-    path: Assets/Scenes/16_Buckley.unity
-    guid: dcc56e7f530314bf0a6272e3dce2725c
-  - enabled: 1
-    path: Assets/Scenes/25_UrbanEatery_outside.unity
-    guid: f003ae67ae0c74f1e918ea349fc882d6
-  - enabled: 1
-    path: Assets/Scenes/DAC.unity
-    guid: 8265bb7503ac4414f9837bb7aa777ebb
-  - enabled: 1
-    path: Assets/Scenes/23_Dormitory.unity
-    guid: 10c86922273c541ec92101b31768ce75
+    path: Assets/Scenes/PISB.unity
+    guid: 74e9bc233505c46a4b700b5fc8d81d51
   - enabled: 1
     path: Assets/Scenes/Dragon.unity
     guid: 4e04c65e374c8465a93391662dacee1c
   - enabled: 1
-    path: Assets/Scenes/PISB.unity
-    guid: 74e9bc233505c46a4b700b5fc8d81d51
+    path: Assets/Scenes/DAC.unity
+    guid: 8265bb7503ac4414f9837bb7aa777ebb
   - enabled: 1
-    path: Assets/Scenes/18_Steinbright_outside.unity
+    path: Assets/Scenes/16_Buckley.unity
+    guid: dcc56e7f530314bf0a6272e3dce2725c
+  - enabled: 1
+    path: Assets/Scenes/17_33rd_Arch.unity
+    guid: 77aee566882354be5a725e6689d45942
+  - enabled: 1
+    path: Assets/Scenes/18_Steinbright.unity
     guid: 51ca3ceb360304c1282d58a42b15ee1d
+  - enabled: 1
+    path: Assets/Scenes/19_inside_Steinbright.unity
+    guid: 5d3d5564d7faa4a78aed8b60cf8661f9
+  - enabled: 1
+    path: Assets/Scenes/20_Steinbright.unity
+    guid: 59d38a60be20c4c9bb37d25157d02570
+  - enabled: 1
+    path: Assets/Scenes/21_Arch_33rd.unity
+    guid: 765da51a52cf6418a8d25e16d08a3c55
+  - enabled: 1
+    path: Assets/Scenes/22_33rd_Race.unity
+    guid: ad61fb1f282ff4e5e81cff56a77acac0
+  - enabled: 1
+    path: Assets/Scenes/23_Dormitory.unity
+    guid: 10c86922273c541ec92101b31768ce75
+  - enabled: 1
+    path: Assets/Scenes/24_34th_Race.unity
+    guid: 4b74f7622b99e48d09df8986baa6b168
+  - enabled: 1
+    path: Assets/Scenes/25_UrbanEatery.unity
+    guid: f003ae67ae0c74f1e918ea349fc882d6
+  - enabled: 1
+    path: Assets/Scenes/26_inside_UrbanEatery.unity
+    guid: a218a281862db412986c0a97303deb8d
+  - enabled: 1
+    path: Assets/Scenes/27_UrbanEatery.unity
+    guid: 5170bc8883dce4ea8bf7ac13c5196881
+  - enabled: 1
+    path: Assets/Scenes/28_34th_Filbert.unity
+    guid: dbd20938587794b159e1bf1d72ec3853
+  - enabled: 1
+    path: Assets/Scenes/29_URBN.unity
+    guid: 35fe99bf385e14b4e9abddeba0799370
+  - enabled: 1
+    path: Assets/Scenes/30_inside_URBN.unity
+    guid: 9a3d81324cb6c4f81819596279d6b4e4
+  - enabled: 1
+    path: Assets/Scenes/31_URBN.unity
+    guid: 62be3597f8016458aa343c2f43862883
   m_configObjects: {}
