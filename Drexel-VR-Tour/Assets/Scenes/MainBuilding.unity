@@ -256,7 +256,7 @@ PrefabInstance:
     - target: {fileID: 6366260010244704581, guid: 5703d1578695f1445870f0dbb5316c21,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 1868750125}
     - target: {fileID: 6366260010245769409, guid: 5703d1578695f1445870f0dbb5316c21,
         type: 3}
@@ -1052,6 +1052,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MainTextbox
+      objectReference: {fileID: 0}
+    - target: {fileID: 50803770612706825, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7510394924821177162, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
