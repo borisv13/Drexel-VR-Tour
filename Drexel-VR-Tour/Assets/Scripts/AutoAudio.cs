@@ -1,18 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class AutoAudio : MonoBehaviour
 {
-    public GameObject closeAutoAudio;
-    public GameObject openAutoAudio;
     private int autoPlayAudio = 1;
-        // Start is called before the first frame update
+    Image imageComponent;
+    public Sprite autoAudiOnImage; //Drag your first sprite here in inspector.
+    public Sprite autoAudioOffImage; //Drag your second sprite here in inspector.
+                                    // Start is called before the first frame update
     void Start()
     {
         PlayerPrefs.SetInt("autoPlayAudio", autoPlayAudio);
-        closeAutoAudio.SetActive(true);
-        openAutoAudio.SetActive(false);
+        imageComponent = GetComponent<Image>();
+        imageComponent.sprite = autoAudioOffImage;
     }
  
     // Update is called once per frame
@@ -21,19 +24,17 @@ public class AutoAudio : MonoBehaviour
 
     }
 
-    public void clickButton()
+    public void ToggleAutoAudio()
     {
         if (autoPlayAudio == 1)
         {
             autoPlayAudio = 0;
-            closeAutoAudio.SetActive(false);
-            openAutoAudio.SetActive(true);
+            imageComponent.sprite = autoAudiOnImage;
         }
         else
         {
             autoPlayAudio = 1;
-            closeAutoAudio.SetActive(true);
-            openAutoAudio.SetActive(false);
+            imageComponent.sprite = autoAudioOffImage;
         }
         PlayerPrefs.SetInt("autoPlayAudio", autoPlayAudio);
     }
