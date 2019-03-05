@@ -12,9 +12,6 @@ public class UserPreferences : MonoBehaviour
     void Start()
     {
         ToggleAutoAudio();
-        buttons[0].GetComponent<Image>().sprite = autoAudioOffImage;
-        buttons[1].GetComponent<Image>().sprite = autoAudioOnImage;
-        buttons[2].GetComponent<Image>().sprite = autoAudioOffImage;
     }
 
     // Update is called once per frame
@@ -34,7 +31,6 @@ public class UserPreferences : MonoBehaviour
 
     public void ToggleAutoAudio()
     {
-        Debug.Log("autoaudio:"+buttons[1]);
         PlayerPrefs.SetInt("autoPlayAudio", 1);
         PlayerPrefs.SetInt("autoWalk", 0);
         buttons[0].GetComponent<Image>().sprite = autoAudioOffImage;
