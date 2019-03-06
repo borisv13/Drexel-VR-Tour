@@ -302,12 +302,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 845703817}
+      objectReference: {fileID: 1048007360}
     - target: {fileID: 6366260010245769409, guid: 5703d1578695f1445870f0dbb5316c21,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1579602723}
+      objectReference: {fileID: 2047190933}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5703d1578695f1445870f0dbb5316c21, type: 3}
 --- !u!20 &566475160 stripped
@@ -316,7 +316,7 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 566475159}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &845703817
+--- !u!21 &1048007360
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -542,12 +542,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_play.Array.data[0]
       value: 
-      objectReference: {fileID: 1558369221}
+      objectReference: {fileID: 1558369222}
     - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
         type: 3}
       propertyPath: m_pause.Array.data[0]
       value: 
-      objectReference: {fileID: 1558369222}
+      objectReference: {fileID: 1558369221}
     - target: {fileID: 9080719819972118079, guid: 96fff2cee699f4f6c8ade785c4ce844b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -655,6 +655,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96fff2cee699f4f6c8ade785c4ce844b, type: 3}
+--- !u!114 &1530604458 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1530604457}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a98d9ab81f0c74ab35b17efc06295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1558369219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -666,16 +678,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MainTextbox
-      objectReference: {fileID: 0}
-    - target: {fileID: 50803770612706825, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 59451c9f436154e7eb62c09bf42aa548, type: 3}
-    - target: {fileID: 5551151471844521776, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_Name
-      value: MainText_Pause_Button
       objectReference: {fileID: 0}
     - target: {fileID: 7510394924821177162, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
@@ -732,25 +734,108 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8722250955217738454, guid: e953b2f5019674301ae301f32748e4a3,
+    - target: {fileID: 1630493982859560455, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
-      propertyPath: m_Name
-      value: MainText_Play_Button
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1530604458}
+    - target: {fileID: 1630493982859560455, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayAndPauseTextBox
       objectReference: {fileID: 0}
-    - target: {fileID: 9056229313690970482, guid: e953b2f5019674301ae301f32748e4a3,
+    - target: {fileID: 3423235048401557818, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
-      propertyPath: m_Name
-      value: MainText_Rewind
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1530604458}
+    - target: {fileID: 3423235048401557818, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: forward
       objectReference: {fileID: 0}
-    - target: {fileID: 8041561472250199742, guid: e953b2f5019674301ae301f32748e4a3,
+    - target: {fileID: 8122344355267647777, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
-      propertyPath: m_Name
-      value: MainText_Forward
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1530604458}
+    - target: {fileID: 8122344355267647777, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayAndPauseTextBox
       objectReference: {fileID: 0}
-    - target: {fileID: 8367323911308236641, guid: e953b2f5019674301ae301f32748e4a3,
+    - target: {fileID: 7333097013101609495, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
-      propertyPath: m_Name
-      value: MainText
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1530604458}
+    - target: {fileID: 7333097013101609495, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: rewind
+      objectReference: {fileID: 0}
+    - target: {fileID: 50803770612706825, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 59451c9f436154e7eb62c09bf42aa548, type: 3}
+    - target: {fileID: 2517526599977200012, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 49.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366204952588908251, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_text
+      value: 'The Daskalakis Athletic Center
+
+
+        Drexel students have a lot to choose from when it comes to being active. We
+        have 18 Division I teams, from basketball to crew to field hockey. Students
+        can also take part in club and intramural sports, a great way to meet other
+        Drexel Dragons and have some fun. The Daskalakis Athletic Center, also known
+        as the DAC, is the home of Drexel Athletics. Here, students can take a swim,
+        play some squash, scale an indoor rock-climbing wall, and more.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 477
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 84
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 84
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: 414
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e953b2f5019674301ae301f32748e4a3, type: 3}
@@ -762,17 +847,17 @@ AudioSource:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1558369221 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8722250955217738454, guid: e953b2f5019674301ae301f32748e4a3,
+  m_CorrespondingSourceObject: {fileID: 5551151471844521776, guid: e953b2f5019674301ae301f32748e4a3,
     type: 3}
   m_PrefabInstance: {fileID: 1558369219}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1558369222 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5551151471844521776, guid: e953b2f5019674301ae301f32748e4a3,
+  m_CorrespondingSourceObject: {fileID: 8722250955217738454, guid: e953b2f5019674301ae301f32748e4a3,
     type: 3}
   m_PrefabInstance: {fileID: 1558369219}
   m_PrefabAsset: {fileID: 0}
---- !u!43 &1579602723
+--- !u!43 &2047190933
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
