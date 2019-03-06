@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731755, g: 0.13414776, b: 0.121078834, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -112,7 +112,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!43 &500025403
+--- !u!43 &220874408
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -343,12 +343,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1987662447}
+      objectReference: {fileID: 1030499332}
     - target: {fileID: 6366260010245769409, guid: 5703d1578695f1445870f0dbb5316c21,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 500025403}
+      objectReference: {fileID: 220874408}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5703d1578695f1445870f0dbb5316c21, type: 3}
 --- !u!20 &749744519 stripped
@@ -689,42 +689,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_text
-      value: You are inside the Mandell Theater. Please look at the back arrow to
-        proceed with the tour
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1593377736408036712, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
       propertyPath: m_Name
@@ -815,6 +779,42 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_text
+      value: You are inside the Mandell Theater. Please look at the back arrow to
+        proceed with the tour
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e953b2f5019674301ae301f32748e4a3, type: 3}
 --- !u!82 &1021689306 stripped
@@ -879,6 +879,40 @@ MonoBehaviour:
   m_SelectionImage: {fileID: 784587191}
   m_HideOnStart: 1
   m_WaitTime: 2
+--- !u!21 &1030499332
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1521837590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1012,6 +1046,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
         type: 3}
+      propertyPath: m_audio.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: m_play.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: m_pause.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
       propertyPath: mainInteractiveSound
       value: 
       objectReference: {fileID: 1021689306}
@@ -1020,6 +1069,21 @@ PrefabInstance:
       propertyPath: mainInteractiveItemIndex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: m_audio.Array.data[0]
+      value: 
+      objectReference: {fileID: 1021689306}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: m_play.Array.data[0]
+      value: 
+      objectReference: {fileID: 1021689308}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: m_pause.Array.data[0]
+      value: 
+      objectReference: {fileID: 1021689310}
     - target: {fileID: 9080719819972118079, guid: 96fff2cee699f4f6c8ade785c4ce844b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1139,40 +1203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a98d9ab81f0c74ab35b17efc06295e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &1987662447
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2105115576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,6 +1476,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 749744519}
+    - target: {fileID: 4900322622148799979, guid: 9e6a82d04374646108ffbef6eb4eca43,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4900322622110906851, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1495,11 +1530,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900322622148799979, guid: 9e6a82d04374646108ffbef6eb4eca43,
-        type: 3}
-      propertyPath: m_FillAmount
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e6a82d04374646108ffbef6eb4eca43, type: 3}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731755, g: 0.13414776, b: 0.121078834, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -119,42 +119,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_text
-      value: You are inside the Daskalakis Athletic Center. Please look at the back
-        arrow to proceed with the tour
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 1593377736408036712, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
       propertyPath: m_Name
@@ -244,6 +208,42 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_text
+      value: You are inside the Daskalakis Athletic Center. Please look at the back
+        arrow to proceed with the tour
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e953b2f5019674301ae301f32748e4a3, type: 3}
@@ -648,6 +648,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
         type: 3}
+      propertyPath: m_audio.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: m_play.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: m_pause.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
       propertyPath: mainInteractiveSound
       value: 
       objectReference: {fileID: 65444330}
@@ -656,6 +671,21 @@ PrefabInstance:
       propertyPath: mainInteractiveItemIndex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: m_audio.Array.data[0]
+      value: 
+      objectReference: {fileID: 65444330}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: m_play.Array.data[0]
+      value: 
+      objectReference: {fileID: 65444332}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: m_pause.Array.data[0]
+      value: 
+      objectReference: {fileID: 65444334}
     - target: {fileID: 9080719819972118079, guid: 96fff2cee699f4f6c8ade785c4ce844b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -846,12 +876,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1525381323}
+      objectReference: {fileID: 605534002}
     - target: {fileID: 6366260010245769409, guid: 5703d1578695f1445870f0dbb5316c21,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1756586816}
+      objectReference: {fileID: 1470865967}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5703d1578695f1445870f0dbb5316c21, type: 3}
 --- !u!20 &341324115 stripped
@@ -860,6 +890,40 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 341324114}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &605534002
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &624116232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1059,6 +1123,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 341324115}
+    - target: {fileID: 4900322622148799979, guid: 9e6a82d04374646108ffbef6eb4eca43,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4900322622110906851, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1108,11 +1177,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900322622148799979, guid: 9e6a82d04374646108ffbef6eb4eca43,
-        type: 3}
-      propertyPath: m_FillAmount
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e6a82d04374646108ffbef6eb4eca43, type: 3}
@@ -1309,41 +1373,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435403422}
   m_CullTransparentMesh: 0
---- !u!21 &1525381323
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!43 &1756586816
+--- !u!43 &1470865967
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
