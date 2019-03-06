@@ -975,6 +975,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainText_Play_Button
       objectReference: {fileID: 0}
+    - target: {fileID: 5551151471844521776, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_Name
+      value: MainText_Pause_Button
+      objectReference: {fileID: 0}
     - target: {fileID: 7510394924821177162, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1107,7 +1112,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7073827537814560373, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
-      propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
@@ -1147,8 +1151,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e953b2f5019674301ae301f32748e4a3, type: 3}
---- !u!82 &1776812627 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 50803770612706825, guid: e953b2f5019674301ae301f32748e4a3,
     type: 3}

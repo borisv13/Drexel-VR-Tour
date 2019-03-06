@@ -1152,6 +1152,26 @@ PrefabInstance:
       propertyPath: m_textInfo.lineCount
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8722250955217738454, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_Name
+      value: MainText_Play_Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056229313690970482, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_Name
+      value: MainText_Rewind
+      objectReference: {fileID: 0}
+    - target: {fileID: 8041561472250199742, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_Name
+      value: MainText_Forward
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367323911308236641, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_Name
+      value: MainText
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e953b2f5019674301ae301f32748e4a3, type: 3}
 --- !u!82 &2095958776 stripped

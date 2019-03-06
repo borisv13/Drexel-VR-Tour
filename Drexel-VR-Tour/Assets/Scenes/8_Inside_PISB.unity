@@ -471,11 +471,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 422823732}
-    - target: {fileID: 4900322622148799979, guid: 9e6a82d04374646108ffbef6eb4eca43,
-        type: 3}
-      propertyPath: m_FillAmount
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4900322622110906851, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -525,6 +520,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900322622148799979, guid: 9e6a82d04374646108ffbef6eb4eca43,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e6a82d04374646108ffbef6eb4eca43, type: 3}
@@ -775,11 +775,8 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 132825249}
+      objectReference: {fileID: 1031301227}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5703d1578695f1445870f0dbb5316c21, type: 3}
---- !u!20 &422823732 stripped
-Camera:
   m_CorrespondingSourceObject: {fileID: 2647583253585908568, guid: 5703d1578695f1445870f0dbb5316c21,
     type: 3}
   m_PrefabInstance: {fileID: 422823731}
@@ -1096,6 +1093,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MainTextbox
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551151471844521776, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_Name
+      value: MainText_Pause_Button
       objectReference: {fileID: 0}
     - target: {fileID: 7510394924821177162, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}

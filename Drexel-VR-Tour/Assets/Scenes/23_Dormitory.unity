@@ -329,6 +329,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainText_Play_Button
       objectReference: {fileID: 0}
+    - target: {fileID: 5551151471844521776, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_Name
+      value: MainText_Pause_Button
+      objectReference: {fileID: 0}
     - target: {fileID: 7510394924821177162, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -388,7 +393,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1323053618}
+      objectReference: {fileID: 0}
     - target: {fileID: 1630493982859560455, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -398,7 +403,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1323053618}
+      objectReference: {fileID: 0}
     - target: {fileID: 3423235048401557818, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -408,7 +413,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1323053618}
+      objectReference: {fileID: 0}
     - target: {fileID: 8122344355267647777, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -418,7 +423,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1323053618}
+      objectReference: {fileID: 0}
     - target: {fileID: 7333097013101609495, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName

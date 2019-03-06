@@ -14,6 +14,8 @@ namespace Interactive360.Utils
         public GameObject pointer;
         public float thickness = 0.002f;
         public Color color;
+        public MeshRenderer pointerRenderer;
+        public Color highlightColor;
 
         public event Action<RaycastHit> OnRaycasthit;                   // This event is called every frame that the user's gaze is over a collider.
         
@@ -91,21 +93,20 @@ namespace Interactive360.Utils
                 {
                     if (interactible != m_LastInteractible) interactible.Over();
 
+                    pointer.GetComponent<MeshRenderer>().material.SetColor("_Color", highlightColor);
                     m_LastInteractible = interactible;
 
                     if (OnRaycasthit != null)
                         OnRaycasthit(hit);
                 }
-               
-
-
+                
             }
             else
             {
                 // Nothing was hit, deactive the last interactive item.
                 DeactiveLastInteractible();
                 m_CurrentInteractible = null;
-
+                pointer.GetComponent<MeshRenderer>().material.SetColor("_Color", color);
             }
         }
 
