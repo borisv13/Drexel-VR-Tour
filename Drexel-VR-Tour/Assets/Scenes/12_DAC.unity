@@ -302,12 +302,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 588093702}
+      objectReference: {fileID: 1259424997}
     - target: {fileID: 6366260010245769409, guid: 5703d1578695f1445870f0dbb5316c21,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1985424309}
+      objectReference: {fileID: 1970879023}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5703d1578695f1445870f0dbb5316c21, type: 3}
 --- !u!20 &566475160 stripped
@@ -316,7 +316,7 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 566475159}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &588093702
+--- !u!21 &1259424997
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -488,6 +488,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 13_Inside_DAC
       objectReference: {fileID: 0}
+    - target: {fileID: 4900322622110906860, guid: 9e6a82d04374646108ffbef6eb4eca43,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6e2f8eab0ee294b4c8469c9c572307ea,
+        type: 3}
     - target: {fileID: 4900322622148799976, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -498,12 +504,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 24
       objectReference: {fileID: 0}
-    - target: {fileID: 4900322622110906860, guid: 9e6a82d04374646108ffbef6eb4eca43,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6e2f8eab0ee294b4c8469c9c572307ea,
-        type: 3}
     - target: {fileID: 4900322622844834400, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_Camera
@@ -744,74 +744,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 50803770612706825, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 59451c9f436154e7eb62c09bf42aa548, type: 3}
-    - target: {fileID: 2517526599977200012, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 49.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1366204952588908251, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 7073827537814560373, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_text
-      value: 'The Daskalakis Athletic Center
-
-
-        Drexel students have a lot to choose from when it comes to being active. We
-        have 18 Division I teams, from basketball to crew to field hockey. Students
-        can also take part in club and intramural sports, a great way to meet other
-        Drexel Dragons and have some fun. The Daskalakis Athletic Center, also known
-        as the DAC, is the home of Drexel Athletics. Here, students can take a swim,
-        play some squash, scale an indoor rock-climbing wall, and more.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 477
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 84
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 84
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_firstOverflowCharacterIndex
-      value: 414
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 1630493982859560455, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -851,6 +783,79 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: rewind
+      objectReference: {fileID: 0}
+    - target: {fileID: 50803770612706825, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 59451c9f436154e7eb62c09bf42aa548, type: 3}
+    - target: {fileID: 2517526599977200012, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 49.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366204952588908251, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_text
+      value: 'This is the Daskalakis Athletic Center
+
+
+        Drexel students have a lot to choose from when it comes to being active. We
+        have 18 Division I teams, from basketball to crew to field hockey. Students
+        can also take part in club and intramural sports, a great way to meet other
+        Drexel Dragons and have some fun. The Daskalakis Athletic Center, also known
+        as the DAC, is the home of Drexel Athletics. Here, students can take a swim,
+        play some squash, scale an indoor rock-climbing wall, and more.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 485
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 86
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 86
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: 422
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7073827537814560373, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960593984382053324, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e953b2f5019674301ae301f32748e4a3, type: 3}
@@ -1010,6 +1015,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 11_Dragon
       objectReference: {fileID: 0}
+    - target: {fileID: 4900322622110906860, guid: 9e6a82d04374646108ffbef6eb4eca43,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92a64f4ba49e42c4b9b7f350c47d1cdc,
+        type: 3}
     - target: {fileID: 4900322622148799976, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -1020,12 +1031,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 24
       objectReference: {fileID: 0}
-    - target: {fileID: 4900322622110906860, guid: 9e6a82d04374646108ffbef6eb4eca43,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 92a64f4ba49e42c4b9b7f350c47d1cdc,
-        type: 3}
     - target: {fileID: 4900322622844834400, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_Camera
@@ -1033,7 +1038,7 @@ PrefabInstance:
       objectReference: {fileID: 566475160}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e6a82d04374646108ffbef6eb4eca43, type: 3}
---- !u!43 &1985424309
+--- !u!43 &1970879023
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
