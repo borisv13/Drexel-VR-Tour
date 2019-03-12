@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.2319912, g: 0.20710415, b: 0.1810893, a: 1}
+  m_IndirectSpecularColor: {r: 0.231899, g: 0.20705256, b: 0.18098971, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -647,21 +647,9 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 1021689305}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1021689307 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5927613587058230633, guid: e953b2f5019674301ae301f32748e4a3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1021689305}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1021689308 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8722250955217738454, guid: e953b2f5019674301ae301f32748e4a3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1021689305}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1021689309 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3858033179725394714, guid: e953b2f5019674301ae301f32748e4a3,
     type: 3}
   m_PrefabInstance: {fileID: 1021689305}
   m_PrefabAsset: {fileID: 0}
@@ -684,7 +672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsingFillImage: 1
-  m_SelectionImage: {fileID: 2105115578}
+  m_SelectionImage: {fileID: 0}
   m_HideOnStart: 1
   m_WaitTime: 2
 --- !u!114 &1021689312
@@ -700,7 +688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsingFillImage: 1
-  m_SelectionImage: {fileID: 784587191}
+  m_SelectionImage: {fileID: 0}
   m_HideOnStart: 1
   m_WaitTime: 2
 --- !u!1001 &1521837590

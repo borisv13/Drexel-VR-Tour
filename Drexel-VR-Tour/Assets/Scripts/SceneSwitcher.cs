@@ -7,8 +7,21 @@ public class SceneSwitcher : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    public string nextScene;
+    public string previousScene;
+
     void Start()
     {
+    }
+
+    public void SwitchToNextScene()
+    {
+        SceneManager.LoadScene(nextScene);
+    }
+
+    public void SwitchToPreviousScene()
+    {
+        SceneManager.LoadScene(previousScene);
     }
 
     public void ChangeTo1MainBuilding()
