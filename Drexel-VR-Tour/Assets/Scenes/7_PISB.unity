@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.2548766, g: 0.2834618, b: 0.3216066, a: 1}
+  m_IndirectSpecularColor: {r: 0.25494337, g: 0.28345335, b: 0.32167506, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -162,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 4900322622844834403, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4900322622844834403, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
@@ -233,29 +233,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3741729049051037978, guid: 29b5547c29cd14cf2a153b902312a475,
-        type: 3}
+      objectReference: {fileID: 133769476}
     - target: {fileID: 4900322622110906861, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeScene
+      value: SwitchToPreviousScene
       objectReference: {fileID: 0}
     - target: {fileID: 4900322622110906861, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4900322622110906861, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 6_MandellTheatre
       objectReference: {fileID: 0}
-    - target: {fileID: 4900322622110906860, guid: 9e6a82d04374646108ffbef6eb4eca43,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 92a64f4ba49e42c4b9b7f350c47d1cdc,
-        type: 3}
     - target: {fileID: 4900322622148799976, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -266,6 +259,12 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 24
       objectReference: {fileID: 0}
+    - target: {fileID: 4900322622110906860, guid: 9e6a82d04374646108ffbef6eb4eca43,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92a64f4ba49e42c4b9b7f350c47d1cdc,
+        type: 3}
     - target: {fileID: 4900322622844834400, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_Camera
@@ -284,6 +283,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SceneManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741729049051037978, guid: 29b5547c29cd14cf2a153b902312a475,
+        type: 3}
+      propertyPath: previousScene
+      value: 6_MandellTheatre
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741729049051037978, guid: 29b5547c29cd14cf2a153b902312a475,
+        type: 3}
+      propertyPath: nextScene
+      value: 8_Inside_PISB
       objectReference: {fileID: 0}
     - target: {fileID: 3741729049051037979, guid: 29b5547c29cd14cf2a153b902312a475,
         type: 3}
@@ -323,7 +332,7 @@ PrefabInstance:
     - target: {fileID: 3741729049051037979, guid: 29b5547c29cd14cf2a153b902312a475,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3741729049051037979, guid: 29b5547c29cd14cf2a153b902312a475,
         type: 3}
@@ -392,7 +401,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29b5547c29cd14cf2a153b902312a475, type: 3}
---- !u!43 &289080366
+--- !u!114 &133769476 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3741729049051037978, guid: 29b5547c29cd14cf2a153b902312a475,
+    type: 3}
+  m_PrefabInstance: {fileID: 133769475}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d9affce846a4369add80a9d03088e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!21 &353352009
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!43 &1480892649
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -673,29 +728,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3741729049051037978, guid: 29b5547c29cd14cf2a153b902312a475,
-        type: 3}
+      objectReference: {fileID: 133769476}
     - target: {fileID: 4900322622110906861, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeScene
+      value: SwitchToNextScene
       objectReference: {fileID: 0}
     - target: {fileID: 4900322622110906861, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4900322622110906861, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 8_Inside_PISB
       objectReference: {fileID: 0}
-    - target: {fileID: 4900322622110906860, guid: 9e6a82d04374646108ffbef6eb4eca43,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6e2f8eab0ee294b4c8469c9c572307ea,
-        type: 3}
     - target: {fileID: 4900322622148799976, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -706,6 +754,12 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 24
       objectReference: {fileID: 0}
+    - target: {fileID: 4900322622110906860, guid: 9e6a82d04374646108ffbef6eb4eca43,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6e2f8eab0ee294b4c8469c9c572307ea,
+        type: 3}
     - target: {fileID: 4900322622844834400, guid: 9e6a82d04374646108ffbef6eb4eca43,
         type: 3}
       propertyPath: m_Camera
@@ -713,40 +767,6 @@ PrefabInstance:
       objectReference: {fileID: 2089312327}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e6a82d04374646108ffbef6eb4eca43, type: 3}
---- !u!21 &1594267923
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1620049672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -776,6 +796,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
         type: 3}
+      propertyPath: switchToScene.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
       propertyPath: mainInteractiveSound
       value: 
       objectReference: {fileID: 1995054406}
@@ -794,6 +819,31 @@ PrefabInstance:
       propertyPath: m_pause.Array.data[0]
       value: 
       objectReference: {fileID: 1995054407}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: switchToScene.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: switchToScene.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: switchToScene.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 133769476}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: switchToScene.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SwitchToNextScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080719819972118078, guid: 96fff2cee699f4f6c8ade785c4ce844b,
+        type: 3}
+      propertyPath: switchToScene.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9080719819972118079, guid: 96fff2cee699f4f6c8ade785c4ce844b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1025,6 +1075,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 7073827537814560373, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5488167227058160276, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
       propertyPath: m_text
@@ -1074,16 +1129,6 @@ PrefabInstance:
       propertyPath: m_textInfo.lineCount
       value: 13
       objectReference: {fileID: 0}
-    - target: {fileID: 7073827537814560373, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4264114302112654982, guid: e953b2f5019674301ae301f32748e4a3,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1630493982859560455, guid: e953b2f5019674301ae301f32748e4a3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1123,6 +1168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: rewind
+      objectReference: {fileID: 0}
+    - target: {fileID: 4264114302112654982, guid: e953b2f5019674301ae301f32748e4a3,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e953b2f5019674301ae301f32748e4a3, type: 3}
@@ -1194,7 +1244,7 @@ PrefabInstance:
     - target: {fileID: 6366260010242847259, guid: 5703d1578695f1445870f0dbb5316c21,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6366260010242847259, guid: 5703d1578695f1445870f0dbb5316c21,
         type: 3}
@@ -1215,12 +1265,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1594267923}
+      objectReference: {fileID: 353352009}
     - target: {fileID: 6366260010245769409, guid: 5703d1578695f1445870f0dbb5316c21,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 289080366}
+      objectReference: {fileID: 1480892649}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5703d1578695f1445870f0dbb5316c21, type: 3}
 --- !u!20 &2089312327 stripped
